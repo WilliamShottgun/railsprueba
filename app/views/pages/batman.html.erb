@@ -13,3 +13,11 @@ $(document).on('turbolinks:load', function(){
 
 });
 </script>
+
+<form action="<%= pages_save_batman_path %>" method="POST">
+		<%= hidden_field_tag :authenticity_token,
+		form_authenticity_token %>
+			Nombre:<input name="nombre">
+			Email:<input name="email">
+			<input type="submit" value="enviar">
+		</form>
