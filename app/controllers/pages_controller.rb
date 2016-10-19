@@ -1,7 +1,9 @@
 class PagesController < ApplicationController
   def batman
+  	@contador = [Votosbatman.count]
   end
   def superman
+  	@contador = [Votossuperman.count]
   end
   def batman_vs_superman
   end

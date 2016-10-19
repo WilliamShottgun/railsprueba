@@ -12,7 +12,7 @@ $(document).on('turbolinks:load', function(){
 });
 </script>
 
-
+<div class="container">
 
 <form action="<%= pages_save_superman_path %>" method="POST">
 		<%= hidden_field_tag :authenticity_token,
@@ -21,3 +21,7 @@ $(document).on('turbolinks:load', function(){
 			Email:<input name="email">
 			<input type="submit" value="enviar">
 		</form>
+
+				<span style="font-size:60px;"><%= @contador %><span>
+
+</div>
